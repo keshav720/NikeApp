@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-import products from "../data/products";
+import { createSlice } from '@reduxjs/toolkit';
+import products from '../data/products';
 
 const initialState = {
   products: products,
@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const productsSlice = createSlice({
-  name: "products",
+  name: 'products',
   initialState,
   reducers: {
     setSelectedProduct: (state, action) => {
@@ -16,4 +16,3 @@ export const productsSlice = createSlice({
     },
   },
 });
-
